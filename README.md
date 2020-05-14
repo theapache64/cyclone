@@ -6,23 +6,22 @@ I tried to implement MVVM with *Android Architecture Components* in a **CLI app*
 
 ## Story 🌲
 
-I was just wondering would it be possible to write CLI apps like we write Android apps by using the same structure, tools, and the APIs.
+I was just wondering would it be possible to write CLI apps like we write Android apps. By using the same structure, tools, and the APIs.
 
-I started the project by cloning `LiveData` API structure. I made sure that It works as expected.
-After that I cloned API structures of  `ViewModel, Activity, Application, Context and Intent`. I didn't fully clone the component, 
-but the minimum version to write a simple CLI app. 
+I started the project by cloning `LiveData` API structure. I made sure that it works as expected.
+After that I cloned API structures of  `ViewModel, Activity, Application, Context and Intent`. (I didn't fully clone the component, 
+but the minimum version to write a simple CLI app)
 
 (By this time, you might have got why I named the project cy**clone** 😋)
 
-
 ## Structure 📂
 
-The project contains 2 modules, Core and Example. Core module contains the clones classes, and the 
-Example module contains, an example using the cloned classes. 
+The project contains 2 modules, Core and Example. Core module contains the cloned classes, and the 
+Example module contains an example using the cloned classes. 
 
-The Example is a TODO app. It has below given features
+The Example is a TODO app. It has below given features.
 
-- LogIn 
+- Log In 
 - Todo Listing
 
 ## Built With 🛠️
@@ -36,7 +35,7 @@ The Example is a TODO app. It has below given features
 
 ### Core
 
-```shell script
+```
 .
 └── core
     ├── Activity.kt
@@ -61,7 +60,7 @@ The Example is a TODO app. It has below given features
 
 ### Example
 
-```shell script
+```
 .
 └── example
     ├── App.kt
@@ -103,6 +102,7 @@ The Example is a TODO app. It has below given features
 - [ ] Add more features to example TODO app
 - [ ] Add comments to source code
 - [ ] Clone more components
+- [ ] Publish `core` via `maven`
 
 
 ## Author ✍️
