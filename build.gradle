@@ -4,12 +4,14 @@ plugins {
 }
 apply plugin: 'kotlin-kapt'
 
-group 'com.theapache64.cyclone'
-version 'v1.0.0-alpha01'
-
 repositories {
+    apply from: "${rootProject.projectDir}/dependencies.gradle"
     mavenCentral()
 }
+
+group 'com.theapache64'
+version "$versions.retrosheet_version"
+
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
