@@ -4,6 +4,12 @@ I tried to implement MVVM with *Android Architecture Components* in a **CLI app*
 
 *NOTE: This project is under active development 🚧*
 
+## Install ⌨️
+
+```groovy
+implementation 'com.theapache64:cyclone:1.0.0-alpha01'
+```
+
 ## Story 🌲
 
 I was just wondering would it be possible to write CLI apps like we write Android apps. By using the same structure, tools, and the APIs.
