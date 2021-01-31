@@ -10,7 +10,7 @@ repositories {
 }
 
 group 'com.theapache64'
-version "$versions.retrosheet_version"
+version "$versions.cyclone_version"
 
 
 dependencies {

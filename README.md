@@ -20,26 +20,27 @@ but the minimum version to write a simple CLI app)
 
 (By this time, you might have got why I named the project cy**clone** 😋)
 
-## Structure 📂
+## Example 🔬
 
-The project contains 2 modules, Core and Example. Core module contains the cloned classes, and the 
-Example module contains an example using the cloned classes. 
+### Structure 📂
+
+The example project contains 2 modules, Core and Example. Core module contains the cloned classes (library), and the Example module contains an example using the cloned classes. 
 
 The Example is a TODO app. It has below given features.
 
 - Log In 
 - Todo Listing
 
-## Built With 🛠️
+### Built With 🛠️
 
 - Coroutines 🔃
 - Dagger2 🗡️
 - Moshi 🔳
 - Retrofit 🌐
 
-## Directory Structure 📁
+### Directory Structure 📁
 
-### Core
+### Library 
 
 ```
 .
@@ -108,7 +109,7 @@ The Example is a TODO app. It has below given features.
 - [ ] Add more features to example TODO app
 - [ ] Add comments to source code
 - [ ] Clone more components
-- [ ] Publish `core` via `maven`
+- [x] Publish `core` via `maven`
 
 
 ## Author ✍️
