@@ -12,23 +12,30 @@ implementation 'com.theapache64:cyclone:1.0.0-alpha01'
 
 ## Story 🌲
 
-I was just wondering would it be possible to write CLI apps like we write Android apps. By using the same structure, tools, and the APIs.
+I was just wondering would it be possible to write CLI apps like we write Android apps. By using the same structure,
+tools, and the APIs.
 
-I started the project by cloning `LiveData` API structure. I made sure that it works as expected.
-After that I cloned API structures of  `ViewModel, Activity, Application, Context and Intent`. (I didn't fully clone the component, 
-but the minimum version to write a simple CLI app)
+I started the project by cloning `LiveData` API structure. I made sure that it works as expected. After that I cloned
+API structures of  `ViewModel, Activity, Application, Context and Intent`. (I didn't fully clone the component, but the
+minimum version to write a simple CLI app)
 
 (By this time, you might have got why I named the project cy**clone** 😋)
 
 ## Example 🔬
 
+### How to run the example ?
+
+- Run the main method
+- Give any username and password (length should be > 0)
+
 ### Structure 📂
 
-The example project contains 2 modules, Core and Example. Core module contains the cloned classes (library), and the Example module contains an example using the cloned classes. 
+The example project contains 2 modules, Core and Example. Core module contains the cloned classes (library), and the
+Example module contains an example using the cloned classes.
 
 The Example is a TODO app. It has below given features.
 
-- Log In 
+- Log In
 - Todo Listing
 
 ### Built With 🛠️
@@ -40,7 +47,7 @@ The Example is a TODO app. It has below given features.
 
 ### Directory Structure 📁
 
-### Library 
+### Library
 
 ```
 .
@@ -110,7 +117,6 @@ The Example is a TODO app. It has below given features.
 - [ ] Add comments to source code
 - [ ] Clone more components
 - [x] Publish `core` via `maven`
-
 
 ## Author ✍️
 
