@@ -24,7 +24,7 @@ class NetworkModule {
     @Provides
     fun provideRetrofit(moshi: Moshi): Retrofit {
         return Retrofit.Builder()
-            .baseUrl("https://theapache64.com/mock_api/get_json/jvm_livedata/")
+            .baseUrl("https://raw.githubusercontent.com/theapache64/cyclone/master/src/main/resources/")
             .addCallAdapterFactory(FlowResourceCallAdapterFactory())
             .addConverterFactory(MoshiConverterFactory.create(moshi))
             .build()

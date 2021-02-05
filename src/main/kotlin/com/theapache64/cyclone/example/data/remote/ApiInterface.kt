@@ -12,13 +12,9 @@ import retrofit2.http.POST
 
 interface ApiInterface {
 
-    @POST("login")
-    fun logIn(
-        @Body logInRequest: LogInRequest
-    ): Flow<Resource<LogInResponse>>
+    @GET("login.json")
+    fun logIn(): Flow<Resource<LogInResponse>>
 
-    @GET("get_todo_list")
-    fun getTodoList(
-        @Header("Authorization") apiKey: String
-    ): Flow<Resource<TodoListResponse>>
+    @GET("todo_list.json")
+    fun getTodoList(): Flow<Resource<TodoListResponse>>
 }

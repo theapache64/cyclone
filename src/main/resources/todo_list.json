@@ -1,0 +1,18 @@
+{
+  "error": false,
+  "message": "OK",
+  "data": {
+    "todo_list": [
+      {
+        "id": "1",
+        "title": "Pay bills",
+        "desc": "Pay internet and phone bill"
+      },
+      {
+        "id": "2",
+        "title": "Side project",
+        "desc": "Start some side project"
+      }
+    ]
+  }
+}

@@ -19,6 +19,6 @@ class App : Application() {
 /**
  * Entry point
  */
-fun main(args: Array<String>) {
+fun main() {
     App().onCreate()
 }

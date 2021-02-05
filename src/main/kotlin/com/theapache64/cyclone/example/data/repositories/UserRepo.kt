@@ -8,5 +8,8 @@ class UserRepo @Inject constructor(
     private val apiInterface: ApiInterface
 ) {
 
-    fun logIn(logInRequest: LogInRequest) = apiInterface.logIn(logInRequest)
+    /**
+     * We're purposely not using logInRequest, because we're using raw JSON for the response.
+     */
+    fun logIn(logInRequest: LogInRequest) = apiInterface.logIn()
 }

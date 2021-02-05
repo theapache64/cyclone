@@ -6,5 +6,8 @@ import javax.inject.Inject
 class TodoRepo @Inject constructor(
     private val apiInterface: ApiInterface
 ) {
-    fun getTodoList(apiKey: String) = apiInterface.getTodoList(apiKey)
+    /**
+     * We're purposely not using apiKey, because we're using raw JSON for the response.
+     */
+    fun getTodoList(apiKey: String) = apiInterface.getTodoList()
 }
