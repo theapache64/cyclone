@@ -45,7 +45,7 @@ The Example is a TODO app. It has below given features.
 - Moshi 🔳
 - Retrofit 🌐
 
-### Directory Structure 📁
+## Directory Structure 📁
 
 ### Library
 

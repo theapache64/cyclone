@@ -6,12 +6,14 @@ import com.theapache64.cyclone.core.livedata.MutableLiveData
 import com.theapache64.cyclone.core.network.Resource
 import com.theapache64.cyclone.example.data.remote.login.LogInRequest
 import com.theapache64.cyclone.example.data.remote.login.LogInResponse
+import com.theapache64.cyclone.example.data.repositories.PrefRepo
 import com.theapache64.cyclone.example.data.repositories.UserRepo
 import kotlinx.coroutines.flow.onEach
 import javax.inject.Inject
 
 class LogInViewModel @Inject constructor(
-    private val userRepo: UserRepo
+    private val userRepo: UserRepo,
+    private val prefRepo: PrefRepo
 ) {
 
     private val _credentialPrompt = MutableLiveData<Boolean>()
@@ -19,6 +21,9 @@ class LogInViewModel @Inject constructor(
 
     private val _startTodo = MutableLiveData<String>()
     val startTodo: LiveData<String> = _startTodo
+
+    private val _openCount = MutableLiveData<Int>()
+    val openCount: LiveData<Int> = _openCount
 
     private val logInRequest = MutableLiveData<LogInRequest>()
     val logInResponse: LiveData<Resource<LogInResponse>> = logInRequest.switchMap { logInRequest, logInResponse ->
@@ -29,6 +34,11 @@ class LogInViewModel @Inject constructor(
                 }
             }
             .asLiveData(logInResponse)
+    }
+
+    init {
+        _openCount.value = prefRepo.getOpenCount()
+        prefRepo.incrementOpenCount()
     }
 
     private val _msg = MutableLiveData<String>()

@@ -19,6 +19,7 @@ class App : Application() {
 /**
  * Entry point
  */
-fun main() {
+@Suppress("UNUSED_PARAMETER")
+fun main(args: Array<String>) {
     App().onCreate()
 }

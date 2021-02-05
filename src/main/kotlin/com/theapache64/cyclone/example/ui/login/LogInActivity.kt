@@ -25,6 +25,10 @@ class LogInActivity : Activity() {
         super.onCreate()
 
         // Watching for login purpose
+        logInViewModel.openCount.observe {
+            println("OpenCount: $it")
+        }
+
         logInViewModel.logInResponse.observe {
             when (it.status) {
 
