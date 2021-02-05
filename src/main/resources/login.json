@@ -1,0 +1,10 @@
+{
+  "error": false,
+  "message": "OK",
+  "data": {
+    "user": {
+      "name": "John Doe",
+      "api_key": "dummyApiKey"
+    }
+  }
+}
