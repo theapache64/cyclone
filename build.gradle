@@ -16,23 +16,23 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
     testCompile group: 'junit', name: 'junit', version: '4.12'
 
-	// Dagger:A fast dependency injector for Android and Java.
-	implementation 'com.google.dagger:dagger:2.27'
-	kapt 'com.google.dagger:dagger-compiler:2.27'
+    // Dagger:A fast dependency injector for Android and Java.
+    implementation 'com.google.dagger:dagger:2.27'
+    kapt 'com.google.dagger:dagger-compiler:2.27'
 
-	// Moshi Kotlin:Moshi Kotlin
-	implementation 'com.squareup.moshi:moshi-kotlin:1.9.2'
+    // Moshi Kotlin:Moshi Kotlin
+    implementation 'com.squareup.moshi:moshi-kotlin:1.9.2'
 
-	// Retrofit:Retrofit
-	implementation 'com.squareup.retrofit2:retrofit:2.8.1'
+    // Retrofit:Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.8.1'
 
-	// Kotlinx Coroutines Core:Coroutines support libraries for Kotlin
-	implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.6'
+    // Kotlinx Coroutines Core:Coroutines support libraries for Kotlin
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.6'
 
     implementation project(':core')
 
-	// Converter: Moshi:Converter: Moshi
-	implementation 'com.squareup.retrofit2:converter-moshi:2.8.1'
+    // Converter: Moshi:Converter: Moshi
+    implementation 'com.squareup.retrofit2:converter-moshi:2.8.1'
 }
 
 compileKotlin {
