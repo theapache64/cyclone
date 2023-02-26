@@ -12,7 +12,7 @@
 
 ## 🛠 Installation
 ```groovy
-implementation 'com.theapache64:cyclone:1.0.0-alpha01'
+implementation 'com.theapache64:cyclone:1.0.0-beta01'
 ```
 
 ## Story 🌲

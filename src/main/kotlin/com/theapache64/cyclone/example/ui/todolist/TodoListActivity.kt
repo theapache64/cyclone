@@ -20,7 +20,7 @@ class TodoListActivity : Activity() {
     @Inject
     lateinit var todoListViewModel: TodoListViewModel
 
-    override fun onCreate() {
+    override suspend fun onCreate() {
         DaggerTodoListComponent.create().inject(this)
         super.onCreate()
 

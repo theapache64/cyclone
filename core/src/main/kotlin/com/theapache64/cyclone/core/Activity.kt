@@ -10,7 +10,7 @@ open class Activity : Context() {
     /**
      * To start a new activity
      */
-    protected fun startActivity(intent: Intent) {
+    protected suspend fun startActivity(intent: Intent) {
         val activity = intent.to.java.newInstance()
         activity.intent = intent
         onDestroy()
@@ -22,7 +22,7 @@ open class Activity : Context() {
     /**
      * Called when activity started
      */
-    open fun onCreate() {
+    open suspend fun onCreate() {
     }
 
     /**

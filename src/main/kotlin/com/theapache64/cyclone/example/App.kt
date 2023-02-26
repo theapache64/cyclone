@@ -2,13 +2,14 @@ package com.theapache64.cyclone.example
 
 import com.theapache64.cyclone.core.Application
 import com.theapache64.cyclone.example.ui.login.LogInActivity
+import kotlinx.coroutines.runBlocking
 
 /**
  * Application class
  */
 class App : Application() {
 
-    override fun onCreate() {
+    override suspend fun onCreate() {
         super.onCreate()
 
         val logInIntent = LogInActivity.getStartIntent()
@@ -20,6 +21,6 @@ class App : Application() {
  * Entry point
  */
 @Suppress("UNUSED_PARAMETER")
-fun main(args: Array<String>) {
+fun main(args: Array<String>) = runBlocking {
     App().onCreate()
 }

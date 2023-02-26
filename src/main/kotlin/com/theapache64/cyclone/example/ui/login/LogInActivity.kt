@@ -5,6 +5,7 @@ import com.theapache64.cyclone.core.Intent
 import com.theapache64.cyclone.core.network.Resource
 import com.theapache64.cyclone.example.di.components.DaggerLogInComponent
 import com.theapache64.cyclone.example.ui.todolist.TodoListActivity
+import kotlinx.coroutines.runBlocking
 import javax.inject.Inject
 import kotlin.system.exitProcess
 
@@ -20,7 +21,7 @@ class LogInActivity : Activity() {
     @Inject
     lateinit var logInViewModel: LogInViewModel
 
-    override fun onCreate() {
+    override suspend fun onCreate() {
         DaggerLogInComponent.create().inject(this)
         super.onCreate()
 
@@ -52,7 +53,7 @@ class LogInActivity : Activity() {
 
         logInViewModel.startTodo.observe { apiKey ->
             val todoListIntent = TodoListActivity.getStartIntent(apiKey)
-            startActivity(todoListIntent)
+            runBlocking { startActivity(todoListIntent) }
         }
 
         logInViewModel.msg.observe { message ->

@@ -5,13 +5,13 @@ package com.theapache64.cyclone.core
  */
 open class Application  {
 
-    protected fun startActivity(intent: Intent) {
+    protected suspend fun startActivity(intent: Intent) {
         val activity = intent.to.java.newInstance()
         activity.intent = intent
         activity.onCreate()
     }
 
-    open fun onCreate() {
+    open suspend fun onCreate() {
 
     }
 }
